@@ -1,0 +1,1398 @@
+[gd_scene load_steps=191 format=3 uid="uid://cmgbk1gxvd3py"]
+
+[ext_resource type="ArrayMesh" uid="uid://0kvm0dk5f07b" path="res://models/Food/apple.obj" id="1_quuub"]
+[ext_resource type="ArrayMesh" uid="uid://cnf6n5yflmjtj" path="res://models/Food/avocado.obj" id="2_nhw8u"]
+[ext_resource type="ArrayMesh" uid="uid://crx8rtu4clujm" path="res://models/Food/bacon.obj" id="3_qasft"]
+[ext_resource type="ArrayMesh" uid="uid://cuyndp3v344cd" path="res://models/Food/avocadoHalf.obj" id="4_cjj0l"]
+[ext_resource type="ArrayMesh" uid="uid://3jac4d8bgn0f" path="res://models/Food/appleHalf.obj" id="5_q7hmn"]
+[ext_resource type="ArrayMesh" uid="uid://55aq83fecerh" path="res://models/Food/baconRaw.obj" id="6_mb14i"]
+[ext_resource type="ArrayMesh" uid="uid://b8gk7vsjovpx1" path="res://models/Food/banana.obj" id="7_i5x12"]
+[ext_resource type="ArrayMesh" uid="uid://bkji0oi08ijrv" path="res://models/Food/beet.obj" id="8_0m68a"]
+[ext_resource type="ArrayMesh" uid="uid://l31j6dw5gq0b" path="res://models/Food/bread.obj" id="9_hexbt"]
+[ext_resource type="ArrayMesh" uid="uid://dlhc8mp7m7673" path="res://models/Food/broccoli.obj" id="10_caswp"]
+[ext_resource type="ArrayMesh" uid="uid://bds0if8m3xfch" path="res://models/Food/burger.obj" id="11_quv6y"]
+[ext_resource type="ArrayMesh" uid="uid://b2wltm26kw310" path="res://models/Food/burgerCheese.obj" id="12_d8j36"]
+[ext_resource type="ArrayMesh" uid="uid://dm1r8jieay4wl" path="res://models/Food/burgerCheeseDouble.obj" id="13_ttygo"]
+[ext_resource type="ArrayMesh" uid="uid://c85j74oujg0et" path="res://models/Food/burgerDouble.obj" id="14_jwxys"]
+[ext_resource type="ArrayMesh" uid="uid://tltevcm3mliv" path="res://models/Food/cabbage.obj" id="15_quq6d"]
+[ext_resource type="ArrayMesh" uid="uid://bao783pw654l7" path="res://models/Food/cake.obj" id="16_bixiw"]
+[ext_resource type="ArrayMesh" uid="uid://bu8c8vqr3ekut" path="res://models/Food/cakeBirthday.obj" id="17_c81ha"]
+[ext_resource type="ArrayMesh" uid="uid://dihppa876t5f8" path="res://models/Food/carrot.obj" id="18_7ctww"]
+[ext_resource type="ArrayMesh" uid="uid://dqxg4cw0ojgc1" path="res://models/Food/cauliflower.obj" id="19_w4j7s"]
+[ext_resource type="ArrayMesh" uid="uid://bdqv8lpqk11io" path="res://models/Food/celeryStick.obj" id="20_vmve7"]
+[ext_resource type="ArrayMesh" uid="uid://dj0bn2ixix2tw" path="res://models/Food/cheese.obj" id="21_myois"]
+[ext_resource type="ArrayMesh" uid="uid://b8nw6b0ydekkh" path="res://models/Food/cheeseCut.obj" id="22_uvhm3"]
+[ext_resource type="ArrayMesh" uid="uid://0miuyrr5o5qi" path="res://models/Food/cherries.obj" id="23_er77k"]
+[ext_resource type="ArrayMesh" uid="uid://kanly8alg2j0" path="res://models/Food/coconut.obj" id="24_6lucd"]
+[ext_resource type="ArrayMesh" uid="uid://by302agta6l37" path="res://models/Food/coconutHalf.obj" id="25_8lna6"]
+[ext_resource type="ArrayMesh" uid="uid://cavncaotrux14" path="res://models/Food/cookie.obj" id="26_go3ak"]
+[ext_resource type="ArrayMesh" uid="uid://becjaq71fi8uo" path="res://models/Food/cookieChocolate.obj" id="27_gpiub"]
+[ext_resource type="ArrayMesh" uid="uid://dy7e8gonqecib" path="res://models/Food/corn.obj" id="28_ndgix"]
+[ext_resource type="ArrayMesh" uid="uid://cvwsqlic78fi7" path="res://models/Food/cornDog.obj" id="29_0yktd"]
+[ext_resource type="ArrayMesh" uid="uid://rfr2t4388k11" path="res://models/Food/croissant.obj" id="30_4frim"]
+[ext_resource type="ArrayMesh" uid="uid://bbts45ifiboun" path="res://models/Food/cupcake.obj" id="31_a4ot3"]
+[ext_resource type="ArrayMesh" uid="uid://bx1begflqb6au" path="res://models/Food/donut.obj" id="32_ja1n2"]
+[ext_resource type="ArrayMesh" uid="uid://cnc662j8hpguc" path="res://models/Food/donutChocolate.obj" id="33_y8xdk"]
+[ext_resource type="ArrayMesh" uid="uid://dck3s4hynhar8" path="res://models/Food/donutSprinkles.obj" id="34_6j4lt"]
+[ext_resource type="ArrayMesh" uid="uid://c1pbkgaprs52h" path="res://models/Food/dimSum.obj" id="35_ak23c"]
+[ext_resource type="ArrayMesh" uid="uid://bfihf1nvhj1xd" path="res://models/Food/egg.obj" id="36_tm0ri"]
+[ext_resource type="ArrayMesh" uid="uid://ducjycffbjqnf" path="res://models/Food/eggCooked.obj" id="37_668ap"]
+[ext_resource type="ArrayMesh" uid="uid://dqi7iqskil6wc" path="res://models/Food/eggHalf.obj" id="38_h87fv"]
+[ext_resource type="ArrayMesh" uid="uid://cnc48e008dwa4" path="res://models/Food/eggplant.obj" id="39_y4eqi"]
+[ext_resource type="ArrayMesh" uid="uid://dud36ic4h0en1" path="res://models/Food/fish.obj" id="40_xgmpl"]
+[ext_resource type="ArrayMesh" uid="uid://bujn8npogcdb0" path="res://models/Food/fishBones.obj" id="41_2i3es"]
+[ext_resource type="ArrayMesh" uid="uid://ol6o5ua32mcv" path="res://models/Food/gingerBread.obj" id="42_onmi1"]
+[ext_resource type="ArrayMesh" uid="uid://bjepn67gvlknn" path="res://models/Food/grapes.obj" id="43_bs001"]
+[ext_resource type="ArrayMesh" uid="uid://diexrei2qps08" path="res://models/Food/honey.obj" id="44_h5ggb"]
+[ext_resource type="ArrayMesh" uid="uid://ibc6i38kshc8" path="res://models/Food/hotDog.obj" id="45_gi4pw"]
+[ext_resource type="ArrayMesh" uid="uid://njetovmbf60g" path="res://models/Food/hotDogRaw.obj" id="46_2yic8"]
+[ext_resource type="ArrayMesh" uid="uid://2bdrt2um04su" path="res://models/Food/leek.obj" id="47_xacmp"]
+[ext_resource type="ArrayMesh" uid="uid://btx7mtq87t7eo" path="res://models/Food/lemon.obj" id="48_t6fbo"]
+[ext_resource type="ArrayMesh" uid="uid://duoguqa6nu8mk" path="res://models/Food/lemonHalf.obj" id="49_ie8me"]
+[ext_resource type="ArrayMesh" uid="uid://sygie68133xf" path="res://models/Food/loaf.obj" id="50_fh8yn"]
+[ext_resource type="ArrayMesh" uid="uid://c5j4lm8vy3kc2" path="res://models/Food/loafBaguette.obj" id="51_uhip1"]
+[ext_resource type="ArrayMesh" uid="uid://bceajrgcwxo1h" path="res://models/Food/loafRound.obj" id="52_6gxk6"]
+[ext_resource type="ArrayMesh" uid="uid://d2p7hiyle8a3s" path="res://models/Food/makiRoe.obj" id="53_xiuoq"]
+[ext_resource type="ArrayMesh" uid="uid://bca75um55a2c" path="res://models/Food/makiSalmon.obj" id="54_aepgx"]
+[ext_resource type="ArrayMesh" uid="uid://d1eud6sxe7gn8" path="res://models/Food/makiVegetable.obj" id="55_cm44x"]
+[ext_resource type="ArrayMesh" uid="uid://by8vfqv55hm7h" path="res://models/Food/meatCooked.obj" id="56_h34ui"]
+[ext_resource type="ArrayMesh" uid="uid://bs6fovvu4bde2" path="res://models/Food/meatPatty.obj" id="57_mjbk3"]
+[ext_resource type="ArrayMesh" uid="uid://cpfsysj4o4elq" path="res://models/Food/meatRaw.obj" id="58_ihnqk"]
+[ext_resource type="ArrayMesh" uid="uid://js8sf0w16f5u" path="res://models/Food/meatRibs.obj" id="59_1q5f1"]
+[ext_resource type="ArrayMesh" uid="uid://dqd7fq8dhpo3q" path="res://models/Food/meatSausage.obj" id="60_hxg6g"]
+[ext_resource type="ArrayMesh" uid="uid://d285dxvfxw5sx" path="res://models/Food/muffin.obj" id="61_n02vw"]
+[ext_resource type="ArrayMesh" uid="uid://rrjxrfub6dud" path="res://models/Food/mushroom.obj" id="62_4pxua"]
+[ext_resource type="ArrayMesh" uid="uid://bnaqoer5etp21" path="res://models/Food/mushroomHalf.obj" id="63_8o38n"]
+[ext_resource type="ArrayMesh" uid="uid://6ck4em3twciv" path="res://models/Food/mussel.obj" id="64_8g4ga"]
+[ext_resource type="ArrayMesh" uid="uid://8a020p82yt1j" path="res://models/Food/musselOpen.obj" id="65_u64su"]
+[ext_resource type="ArrayMesh" uid="uid://cdtc0upxmmked" path="res://models/Food/onion.obj" id="66_s75v6"]
+[ext_resource type="ArrayMesh" uid="uid://dn7quwm16r8e4" path="res://models/Food/onionHalf.obj" id="67_hvaww"]
+[ext_resource type="ArrayMesh" uid="uid://bvri3hri4mdeb" path="res://models/Food/orange.obj" id="68_b4ix1"]
+[ext_resource type="ArrayMesh" uid="uid://bp1k2ynpql4kn" path="res://models/Food/pancakes.obj" id="69_csxup"]
+[ext_resource type="ArrayMesh" uid="uid://cfskubqbmnub7" path="res://models/Food/paprika.obj" id="70_55xqy"]
+[ext_resource type="ArrayMesh" uid="uid://cb5ca2vvigwpl" path="res://models/Food/paprikaSlice.obj" id="71_8wlm6"]
+[ext_resource type="ArrayMesh" uid="uid://bxukipntio7ww" path="res://models/Food/pear.obj" id="72_jukmw"]
+[ext_resource type="ArrayMesh" uid="uid://d1yopmwynnrop" path="res://models/Food/pearHalf.obj" id="73_bv2hq"]
+[ext_resource type="ArrayMesh" uid="uid://cr4fjwqshkpo5" path="res://models/Food/pepper.obj" id="74_reqlq"]
+[ext_resource type="ArrayMesh" uid="uid://dbo7gpr6t5c3x" path="res://models/Food/pineapple.obj" id="75_y4lii"]
+[ext_resource type="ArrayMesh" uid="uid://da087hh6ha6dc" path="res://models/Food/pizza.obj" id="76_6ngar"]
+[ext_resource type="ArrayMesh" uid="uid://c6iogbuybewwl" path="res://models/Food/pumpkin.obj" id="77_k5fn5"]
+[ext_resource type="ArrayMesh" uid="uid://cf0crel2ctabx" path="res://models/Food/pumpkinBasic.obj" id="78_n2yum"]
+[ext_resource type="ArrayMesh" uid="uid://cje2l841y5mmv" path="res://models/Food/radish.obj" id="79_e352b"]
+[ext_resource type="ArrayMesh" uid="uid://bp8ka13y5b6tg" path="res://models/Food/riceBall.obj" id="80_cncs2"]
+[ext_resource type="ArrayMesh" uid="uid://bf2luogaucafe" path="res://models/Food/sandwich.obj" id="81_kh5hb"]
+[ext_resource type="ArrayMesh" uid="uid://ctmc82yc3y6ar" path="res://models/Food/sausage.obj" id="82_7ov78"]
+[ext_resource type="ArrayMesh" uid="uid://cx6edyg640ku" path="res://models/Food/sausageHalf.obj" id="83_cdaq5"]
+[ext_resource type="ArrayMesh" uid="uid://dgowo5it4p5vp" path="res://models/Food/strawberry.obj" id="84_d54xj"]
+[ext_resource type="ArrayMesh" uid="uid://diimxm0mk8hry" path="res://models/Food/sub.obj" id="85_0gx4d"]
+[ext_resource type="ArrayMesh" uid="uid://btoyh6ho1swx0" path="res://models/Food/sushiEgg.obj" id="86_bgx7v"]
+[ext_resource type="ArrayMesh" uid="uid://dyhari4deodv5" path="res://models/Food/sushiSalmon.obj" id="87_timyy"]
+[ext_resource type="ArrayMesh" uid="uid://djt3yqtkxd5jh" path="res://models/Food/taco.obj" id="88_dymas"]
+[ext_resource type="ArrayMesh" uid="uid://cdt8nm6a1012p" path="res://models/Food/tomato.obj" id="89_42pa7"]
+[ext_resource type="ArrayMesh" uid="uid://5r7purlboaao" path="res://models/Food/tomatoSlice.obj" id="90_h6xb4"]
+[ext_resource type="ArrayMesh" uid="uid://b62l28qgo6smi" path="res://models/Food/turkey.obj" id="91_k48oa"]
+[ext_resource type="ArrayMesh" uid="uid://bkg5ial3wtls2" path="res://models/Food/waffle.obj" id="92_fi7cy"]
+[ext_resource type="ArrayMesh" uid="uid://dx34ubagyjiey" path="res://models/Food/watermelon.obj" id="93_qgfsy"]
+[ext_resource type="ArrayMesh" uid="uid://c243ff1w24u6x" path="res://models/Food/wholeHam.obj" id="94_gq8rt"]
+[ext_resource type="ArrayMesh" uid="uid://c0cdaunki3bg2" path="res://models/Food/wholerHam.obj" id="95_skr1q"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hq4dc"]
+radius = 0.1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s8jou"]
+radius = 0.08
+height = 0.23
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jfsu5"]
+size = Vector3(0.1, 0.05, 0.5)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_icnf8"]
+radius = 0.08
+height = 0.23
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g72f8"]
+radius = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_udp3k"]
+size = Vector3(0.1, 0.05, 0.5)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yh4fw"]
+radius = 0.1
+height = 0.6
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xjtmx"]
+radius = 0.05
+height = 0.25
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t0vka"]
+size = Vector3(0.4, 0.05, 0.3)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_iifkt"]
+height = 0.4
+radius = 0.185
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_p113x"]
+height = 0.25
+radius = 0.18
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jysxc"]
+height = 0.25
+radius = 0.18
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_84urq"]
+height = 0.3
+radius = 0.18
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xnapx"]
+height = 0.35
+radius = 0.18
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lw0fh"]
+radius = 0.15
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_trawg"]
+height = 0.25
+radius = 0.31
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jcvwf"]
+height = 0.25
+radius = 0.32
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gynin"]
+height = 0.5
+radius = 0.05
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yqsx2"]
+height = 0.25
+radius = 0.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_toqi5"]
+height = 0.54
+radius = 0.05
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_m73gt"]
+height = 0.2
+radius = 0.32
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xkvvu"]
+margin = 0.01
+size = Vector3(0.38, 0.025, 0.26)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0sf6p"]
+size = Vector3(0.075, 0.16, 0.15)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lfxch"]
+radius = 0.13
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_llntx"]
+radius = 0.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_o2fdj"]
+height = 0.04
+radius = 0.1
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_l2h7b"]
+height = 0.06
+radius = 0.07
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a7v5k"]
+radius = 0.05
+height = 0.3
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ljvb7"]
+radius = 0.05
+height = 0.6
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qhk1j"]
+size = Vector3(0.3, 0.2, 0.4)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_28vi8"]
+height = 0.3
+radius = 0.15
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_p8ub7"]
+height = 0.08
+radius = 0.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4d41n"]
+height = 0.08
+radius = 0.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5riwj"]
+height = 0.08
+radius = 0.125
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kbpei"]
+height = 0.125
+radius = 0.1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fex35"]
+radius = 0.075
+height = 0.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kc85m"]
+height = 0.05
+radius = 0.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_eogtq"]
+height = 0.1
+radius = 0.075
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lasox"]
+radius = 0.1
+height = 0.4
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m586w"]
+radius = 0.1
+height = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_60ptl"]
+size = Vector3(0.2, 0.1, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dx8h6"]
+margin = 0.01
+size = Vector3(0.25, 0.05, 0.25)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hd1xb"]
+radius = 0.1
+height = 0.4
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_72fnw"]
+height = 0.3
+radius = 0.125
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_n03wy"]
+radius = 0.08
+height = 0.6
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3v8v7"]
+radius = 0.05
+height = 0.55
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ipq37"]
+height = 0.75
+radius = 0.05
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_elohj"]
+radius = 0.1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2o287"]
+radius = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fs616"]
+size = Vector3(0.6, 0.4, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4nljy"]
+size = Vector3(0.8, 0.2, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kgp6v"]
+size = Vector3(0.6, 0.25, 0.4)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gegd1"]
+height = 0.07
+radius = 0.06
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ye0fp"]
+height = 0.07
+radius = 0.06
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mf88f"]
+height = 0.07
+radius = 0.06
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2ygfe"]
+height = 0.05
+radius = 0.25
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2q33m"]
+height = 0.05
+radius = 0.15
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_13mf2"]
+height = 0.05
+radius = 0.25
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ksyb4"]
+size = Vector3(0.5, 0.05, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j3twt"]
+size = Vector3(0.15, 0.1, 0.4)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_68uw6"]
+height = 0.25
+radius = 0.15
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sry0y"]
+height = 0.125
+radius = 0.05
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2ewsq"]
+height = 0.125
+radius = 0.075
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_o82l5"]
+height = 0.05
+radius = 0.05
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nr4k2"]
+height = 0.05
+radius = 0.05
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_56as4"]
+height = 0.2
+radius = 0.1
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7k5y7"]
+height = 0.2
+radius = 0.1
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_drthd"]
+radius = 0.075
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_thyrs"]
+height = 0.1
+radius = 0.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_seiru"]
+height = 0.2
+radius = 0.09
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yiiif"]
+height = 0.05
+radius = 0.1
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rtmpy"]
+height = 0.2
+radius = 0.1
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nw6yl"]
+height = 0.2
+radius = 0.1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0a8j2"]
+margin = 0.02
+radius = 0.04
+height = 0.25
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d5oam"]
+radius = 0.08
+height = 0.3
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wm64o"]
+height = 0.05
+radius = 0.42
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ick57"]
+size = Vector3(0.3, 0.2, 0.3)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3lth8"]
+radius = 0.15
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wujcg"]
+radius = 0.05
+height = 0.25
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wo60b"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wuxwj"]
+size = Vector3(0.4, 0.15, 0.4)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sr8xv"]
+radius = 0.06
+height = 0.35
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_anmq2"]
+height = 0.125
+radius = 0.06
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kfo53"]
+radius = 0.075
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tujhs"]
+size = Vector3(0.25, 0.2, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f5eoi"]
+size = Vector3(0.1, 0.1, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3u1kd"]
+size = Vector3(0.1, 0.1, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xfyh8"]
+size = Vector3(0.5, 0.25, 0.1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_mhybw"]
+radius = 0.08
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mxof4"]
+height = 0.03
+radius = 0.09
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7o3bv"]
+radius = 0.15
+height = 0.7
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3cu60"]
+size = Vector3(0.3, 0.04, 0.3)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_78tw7"]
+radius = 0.23
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sk2ec"]
+radius = 0.15
+height = 0.6
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ml8vg"]
+radius = 0.15
+height = 0.8
+
+[node name="Library" type="Node3D"]
+
+[node name="Apple" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_quuub")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Apple"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Apple/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("SphereShape3D_hq4dc")
+
+[node name="Avocado" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("2_nhw8u")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Avocado"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Avocado/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CapsuleShape3D_s8jou")
+
+[node name="Bacon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_qasft")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Bacon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bacon/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0146431, 0)
+shape = SubResource("BoxShape3D_jfsu5")
+
+[node name="AvocadoHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("4_cjj0l")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AvocadoHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AvocadoHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CapsuleShape3D_icnf8")
+
+[node name="AppleHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("5_q7hmn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("SphereShape3D_g72f8")
+
+[node name="BaconRaw" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("6_mb14i")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="BaconRaw"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BaconRaw/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
+shape = SubResource("BoxShape3D_udp3k")
+
+[node name="Banana" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("7_i5x12")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Banana"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Banana/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.1, 0)
+shape = SubResource("CapsuleShape3D_yh4fw")
+
+[node name="Beet" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("8_0m68a")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Beet"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Beet/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CapsuleShape3D_xjtmx")
+
+[node name="Bread" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("9_hexbt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Bread"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bread/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("BoxShape3D_t0vka")
+
+[node name="Broccoli" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("10_caswp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Broccoli"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Broccoli/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("CylinderShape3D_iifkt")
+
+[node name="Burger" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("11_quv6y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Burger"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Burger/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_p113x")
+
+[node name="BurgerCheese" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
+mesh = ExtResource("12_d8j36")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="BurgerCheese"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BurgerCheese/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_jysxc")
+
+[node name="BurgerCheeseDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("13_ttygo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="BurgerCheeseDouble"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BurgerCheeseDouble/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("CylinderShape3D_84urq")
+
+[node name="BurgerDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
+mesh = ExtResource("14_jwxys")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="BurgerDouble"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BurgerDouble/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.155, 0)
+shape = SubResource("CylinderShape3D_xnapx")
+
+[node name="Cabbage" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("15_quq6d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cabbage"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cabbage/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("SphereShape3D_lw0fh")
+
+[node name="Cake" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("16_bixiw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cake"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cake/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_trawg")
+
+[node name="CakeBirthday" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("17_c81ha")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CakeBirthday"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CakeBirthday/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_jcvwf")
+
+[node name="Carrot" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("18_7ctww")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Carrot"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Carrot/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("CylinderShape3D_gynin")
+
+[node name="Cauliflower" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("19_w4j7s")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cauliflower"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cauliflower/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_yqsx2")
+
+[node name="CeleryStick" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+mesh = ExtResource("20_vmve7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CeleryStick"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CeleryStick/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27, 0)
+shape = SubResource("CylinderShape3D_toqi5")
+
+[node name="Cheese" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+mesh = ExtResource("21_myois")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cheese"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cheese/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11, 0)
+shape = SubResource("CylinderShape3D_m73gt")
+
+[node name="CheeseCut" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("22_uvhm3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CheeseCut"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CheeseCut/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.013, 0)
+shape = SubResource("BoxShape3D_xkvvu")
+
+[node name="Cherries" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("23_er77k")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cherries"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cherries/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0850508, 0)
+shape = SubResource("BoxShape3D_0sf6p")
+
+[node name="Coconut" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("24_6lucd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Coconut"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Coconut/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13, 0)
+shape = SubResource("SphereShape3D_lfxch")
+
+[node name="CoconutHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+mesh = ExtResource("25_8lna6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CoconutHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CoconutHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("SphereShape3D_llntx")
+
+[node name="Cookie" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+mesh = ExtResource("26_go3ak")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cookie"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cookie/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+shape = SubResource("CylinderShape3D_o2fdj")
+
+[node name="CookieChocolate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+mesh = ExtResource("27_gpiub")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CookieChocolate"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CookieChocolate/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+shape = SubResource("CylinderShape3D_l2h7b")
+
+[node name="Corn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+mesh = ExtResource("28_ndgix")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Corn"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corn/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("CapsuleShape3D_a7v5k")
+
+[node name="CornDog" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("29_0yktd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CornDog"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CornDog/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("CapsuleShape3D_ljvb7")
+
+[node name="Croissant" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("30_4frim")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Croissant"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Croissant/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("BoxShape3D_qhk1j")
+
+[node name="Cupcake" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("31_a4ot3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cupcake"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cupcake/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("CylinderShape3D_28vi8")
+
+[node name="Donut" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+mesh = ExtResource("32_ja1n2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Donut"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Donut/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04, 0)
+shape = SubResource("CylinderShape3D_p8ub7")
+
+[node name="DonutChocolate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("33_y8xdk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DonutChocolate"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DonutChocolate/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04, 0)
+shape = SubResource("CylinderShape3D_4d41n")
+
+[node name="DonutSprinkles" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
+mesh = ExtResource("34_6j4lt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DonutSprinkles"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DonutSprinkles/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.04, 0)
+shape = SubResource("CylinderShape3D_5riwj")
+
+[node name="DimSum" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+mesh = ExtResource("35_ak23c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DimSum"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DimSum/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("CylinderShape3D_kbpei")
+
+[node name="Egg" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("36_tm0ri")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Egg"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Egg/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CapsuleShape3D_fex35")
+
+[node name="EggCooked" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("37_668ap")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EggCooked"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EggCooked/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_kc85m")
+
+[node name="EggHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("38_h87fv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EggHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EggHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("CylinderShape3D_eogtq")
+
+[node name="Eggplant" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+mesh = ExtResource("39_y4eqi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Eggplant"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Eggplant/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("CapsuleShape3D_lasox")
+
+[node name="Fish" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5)
+mesh = ExtResource("40_xgmpl")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Fish"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fish/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.125, 0)
+shape = SubResource("CapsuleShape3D_m586w")
+
+[node name="FishBones" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+mesh = ExtResource("41_2i3es")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FishBones"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FishBones/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_60ptl")
+
+[node name="GingerBread" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5)
+mesh = ExtResource("42_onmi1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GingerBread"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GingerBread/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("BoxShape3D_dx8h6")
+
+[node name="Grapes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("43_bs001")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Grapes"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grapes/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("CapsuleShape3D_hd1xb")
+
+[node name="Honey" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6)
+mesh = ExtResource("44_h5ggb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Honey"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Honey/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("CylinderShape3D_72fnw")
+
+[node name="HotDog" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+mesh = ExtResource("45_gi4pw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HotDog"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HotDog/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.08, 0)
+shape = SubResource("CapsuleShape3D_n03wy")
+
+[node name="HotDogRaw" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+mesh = ExtResource("46_2yic8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HotDogRaw"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HotDogRaw/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("CapsuleShape3D_3v8v7")
+
+[node name="Leek" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+mesh = ExtResource("47_xacmp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Leek"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Leek/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
+shape = SubResource("CylinderShape3D_ipq37")
+
+[node name="Lemon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 6)
+mesh = ExtResource("48_t6fbo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lemon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lemon/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("SphereShape3D_elohj")
+
+[node name="LemonHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+mesh = ExtResource("49_ie8me")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LemonHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LemonHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("SphereShape3D_2o287")
+
+[node name="Loaf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+mesh = ExtResource("50_fh8yn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Loaf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Loaf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("BoxShape3D_fs616")
+
+[node name="LoafBaguette" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1)
+mesh = ExtResource("51_uhip1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LoafBaguette"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LoafBaguette/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("BoxShape3D_4nljy")
+
+[node name="LoafRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+mesh = ExtResource("52_6gxk6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LoafRound"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LoafRound/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("BoxShape3D_kgp6v")
+
+[node name="MakiRoe" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 3)
+mesh = ExtResource("53_xiuoq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MakiRoe"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MakiRoe/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.035, 0)
+shape = SubResource("CylinderShape3D_gegd1")
+
+[node name="MakiSalmon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4)
+mesh = ExtResource("54_aepgx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MakiSalmon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MakiSalmon/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.035, 0)
+shape = SubResource("CylinderShape3D_ye0fp")
+
+[node name="MakiVegetable" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 5)
+mesh = ExtResource("55_cm44x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MakiVegetable"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MakiVegetable/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.035, 0)
+shape = SubResource("CylinderShape3D_mf88f")
+
+[node name="MeatCooked" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 6)
+mesh = ExtResource("56_h34ui")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeatCooked"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeatCooked/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_2ygfe")
+
+[node name="MeatPatty" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7)
+mesh = ExtResource("57_mjbk3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeatPatty"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeatPatty/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+shape = SubResource("CylinderShape3D_2q33m")
+
+[node name="MeatRaw" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 7)
+mesh = ExtResource("58_ihnqk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeatRaw"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeatRaw/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_13mf2")
+
+[node name="MeatRibs" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
+mesh = ExtResource("59_1q5f1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeatRibs"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeatRibs/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("BoxShape3D_ksyb4")
+
+[node name="MeatSausage" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 7)
+mesh = ExtResource("60_hxg6g")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeatSausage"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeatSausage/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_j3twt")
+
+[node name="Muffin" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
+mesh = ExtResource("61_n02vw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Muffin"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Muffin/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CylinderShape3D_68uw6")
+
+[node name="Mushroom" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 7)
+mesh = ExtResource("62_4pxua")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mushroom"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mushroom/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.063, 0)
+shape = SubResource("CylinderShape3D_sry0y")
+
+[node name="MushroomHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 7)
+mesh = ExtResource("63_8o38n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MushroomHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MushroomHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.063, 0)
+shape = SubResource("CylinderShape3D_2ewsq")
+
+[node name="Mussel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+mesh = ExtResource("64_8g4ga")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mussel"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mussel/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_o82l5")
+
+[node name="MusselOpen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+mesh = ExtResource("65_u64su")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MusselOpen"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusselOpen/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_nr4k2")
+
+[node name="Onion" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 8)
+mesh = ExtResource("66_s75v6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Onion"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Onion/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CylinderShape3D_56as4")
+
+[node name="OnionHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+mesh = ExtResource("67_hvaww")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="OnionHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OnionHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CylinderShape3D_7k5y7")
+
+[node name="Orange" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 8)
+mesh = ExtResource("68_b4ix1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Orange"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Orange/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
+shape = SubResource("SphereShape3D_drthd")
+
+[node name="Pancakes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+mesh = ExtResource("69_csxup")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pancakes"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pancakes/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02, 0.05, -0.02)
+shape = SubResource("CylinderShape3D_thyrs")
+
+[node name="Paprika" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8)
+mesh = ExtResource("70_55xqy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paprika"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paprika/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CylinderShape3D_seiru")
+
+[node name="PaprikaSlice" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8)
+mesh = ExtResource("71_8wlm6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="PaprikaSlice"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PaprikaSlice/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_yiiif")
+
+[node name="Pear" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 8)
+mesh = ExtResource("72_jukmw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pear"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pear/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CylinderShape3D_rtmpy")
+
+[node name="PearHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+mesh = ExtResource("73_bv2hq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="PearHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PearHalf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("CylinderShape3D_nw6yl")
+
+[node name="Pepper" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 7)
+mesh = ExtResource("74_reqlq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pepper"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pepper/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.04, 0)
+shape = SubResource("CapsuleShape3D_0a8j2")
+
+[node name="Pineapple" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+mesh = ExtResource("75_y4lii")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pineapple"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pineapple/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("CapsuleShape3D_d5oam")
+
+[node name="Pizza" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
+mesh = ExtResource("76_6ngar")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pizza"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pizza/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+shape = SubResource("CylinderShape3D_wm64o")
+
+[node name="Pumpkin" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+mesh = ExtResource("77_k5fn5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pumpkin"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pumpkin/StaticBody3D"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0.1, 0)
+shape = SubResource("BoxShape3D_ick57")
+
+[node name="PumpkinBasic" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+mesh = ExtResource("78_n2yum")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="PumpkinBasic"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PumpkinBasic/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("SphereShape3D_3lth8")
+
+[node name="Radish" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+mesh = ExtResource("79_e352b")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Radish"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Radish/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("CapsuleShape3D_wujcg")
+
+[node name="RiceBall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 1)
+mesh = ExtResource("80_cncs2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RiceBall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RiceBall/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_wo60b")
+
+[node name="Sandwich" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = ExtResource("81_kh5hb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sandwich"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sandwich/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
+shape = SubResource("BoxShape3D_wuxwj")
+
+[node name="Sausage" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+mesh = ExtResource("82_7ov78")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sausage"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sausage/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.06, 0)
+shape = SubResource("CapsuleShape3D_sr8xv")
+
+[node name="SausageHalf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 9)
+mesh = ExtResource("83_cdaq5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SausageHalf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SausageHalf/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.0636516, 0.06, 0)
+shape = SubResource("CylinderShape3D_anmq2")
+
+[node name="Strawberry" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 9)
+mesh = ExtResource("84_d54xj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Strawberry"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Strawberry/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
+shape = SubResource("SphereShape3D_kfo53")
+
+[node name="Sub" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9)
+mesh = ExtResource("85_0gx4d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sub"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sub/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("BoxShape3D_tujhs")
+
+[node name="SushiEgg" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 9)
+mesh = ExtResource("86_bgx7v")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SushiEgg"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SushiEgg/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_f5eoi")
+
+[node name="SushiSalmon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 9)
+mesh = ExtResource("87_timyy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SushiSalmon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SushiSalmon/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+shape = SubResource("BoxShape3D_3u1kd")
+
+[node name="Taco" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9)
+mesh = ExtResource("88_dymas")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Taco"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Taco/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.125, 0)
+shape = SubResource("BoxShape3D_xfyh8")
+
+[node name="Tomato" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 9)
+mesh = ExtResource("89_42pa7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Tomato"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tomato/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.059603, 0)
+shape = SubResource("SphereShape3D_mhybw")
+
+[node name="TomatoSlice" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 9)
+mesh = ExtResource("90_h6xb4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="TomatoSlice"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TomatoSlice/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, 0)
+shape = SubResource("CylinderShape3D_mxof4")
+
+[node name="Turkey" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+mesh = ExtResource("91_k48oa")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Turkey"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Turkey/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -0.067, 0.16, 0)
+shape = SubResource("CapsuleShape3D_7o3bv")
+
+[node name="Waffle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3)
+mesh = ExtResource("92_fi7cy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Waffle"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Waffle/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0198712, 0)
+shape = SubResource("BoxShape3D_3cu60")
+
+[node name="Watermelon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 2)
+mesh = ExtResource("93_qgfsy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Watermelon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Watermelon/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.227251, 0)
+shape = SubResource("SphereShape3D_78tw7")
+
+[node name="WholeHam" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 1)
+mesh = ExtResource("94_gq8rt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WholeHam"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WholeHam/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.223133, 0)
+shape = SubResource("CapsuleShape3D_sk2ec")
+
+[node name="WholerHam" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+mesh = ExtResource("95_skr1q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WholerHam"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WholerHam/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.2, 0)
+shape = SubResource("CapsuleShape3D_ml8vg")

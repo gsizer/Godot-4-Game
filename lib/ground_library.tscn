@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://dht6d1gyrn8hx"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxnih8nrfmsvw" path="res://models/Nature/ground_pathBend.obj" id="1_dk62c"]
+[ext_resource type="ArrayMesh" uid="uid://dnrs6o1a76xli" path="res://models/Nature/ground_pathCross.obj" id="5_5tisw"]
+[ext_resource type="ArrayMesh" uid="uid://c18etc5e7rw52" path="res://models/Nature/ground_pathEnd.obj" id="6_uvl40"]
+[ext_resource type="ArrayMesh" uid="uid://bevb1vunqa0dk" path="res://models/Nature/ground_pathEndClosed.obj" id="7_rsmsy"]
+[ext_resource type="ArrayMesh" uid="uid://g73b85no7lrk" path="res://models/Nature/ground_pathRocks.obj" id="9_ido40"]
+[ext_resource type="ArrayMesh" uid="uid://b8wlaepajpubv" path="res://models/Nature/ground_pathSplit.obj" id="12_nxh6p"]
+[ext_resource type="ArrayMesh" uid="uid://ban54owigax" path="res://models/Nature/ground_pathStraight.obj" id="13_bi1mb"]
+[ext_resource type="ArrayMesh" uid="uid://cs3b4ddssb1cu" path="res://models/Nature/ground_pathTile.obj" id="14_07qyp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jqlms"]
+size = Vector3(1, 0.1, 1)
+
+[node name="Library" type="Node3D"]
+
+[node name="GroundPathTile" type="MeshInstance3D" parent="."]
+mesh = ExtResource("14_07qyp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathTile"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathTile/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("13_bi1mb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathStraight"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathStraight/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("12_nxh6p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathSplit"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathSplit/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathRocks" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("9_ido40")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathRocks"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathRocks/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathEndClosed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("7_rsmsy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathEndClosed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathEndClosed/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("6_uvl40")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathEnd"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathEnd/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathCross" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("5_5tisw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathCross"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathCross/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")
+
+[node name="GroundPathBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("1_dk62c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GroundPathBend"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPathBend/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+shape = SubResource("BoxShape3D_jqlms")

@@ -1,0 +1,549 @@
+[gd_scene load_steps=2 format=3 uid="uid://btjhis1eneuv2"]
+
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_fqary"]
+
+[node name="Menu" type="Control" node_paths=PackedStringArray("SaveDataList", "AmbientVolumeSlider", "EffectsVolumeSlider", "MainVolumeSlider", "MusicVolumeSlider", "VoiceVolumeSlider", "WeatherVolumeSlider", "EnableReflections", "EnableAmbientOcclusion", "EnableIndirectLighting", "EnableGlobalIllumination", "EnableGlow", "EnableFog", "EnableColorAdjust", "BrightnessSlider", "ContrastSlider", "SaturationSlider")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_fqary")
+SelectedGame = -1
+SaveDataList = NodePath("Game/Panel/VBoxContainer/ItemList")
+AmbientVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/AmbientVolume/ambientSlider")
+EffectsVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/EffectsVolume/effectsSlider")
+MainVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/MainVolume/mainSlider")
+MusicVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/MusicVolume/musicSlider")
+VoiceVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/VoiceVolume/voiceSlider")
+WeatherVolumeSlider = NodePath("Audio/Panel/MarginContainer/VBoxContainer/WeatherVolume/weatherSlider")
+EnableReflections = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkReflections")
+EnableAmbientOcclusion = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkAmbientOcclusion")
+EnableIndirectLighting = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkIndirectLighting")
+EnableGlobalIllumination = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkGlobalIllumination")
+EnableGlow = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkGlow")
+EnableFog = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkFog")
+EnableColorAdjust = NodePath("Video/Panel/MarginContainer/VBoxContainer/chkColorAdjust")
+BrightnessSlider = NodePath("Video/Panel/MarginContainer/VBoxContainer/BrightnessControl/BrightnessSlider")
+ContrastSlider = NodePath("Video/Panel/MarginContainer/VBoxContainer/ContrastControl/ContrastSlider")
+SaturationSlider = NodePath("Video/Panel/MarginContainer/VBoxContainer/SaturationControl/SaturationSlider")
+
+[node name="Main" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Main"]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game" type="Button" parent="Main/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Game"
+
+[node name="Audio" type="Button" parent="Main/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Audio"
+
+[node name="Video" type="Button" parent="Main/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Video"
+
+[node name="Quit" type="Button" parent="Main/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
+
+[node name="Game" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Game"]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Game/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="Game/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 3
+allow_reselect = true
+allow_search = false
+auto_height = true
+
+[node name="GameDelete" type="Button" parent="Game/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Delete"
+
+[node name="GameLoad" type="Button" parent="Game/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Load"
+
+[node name="GameNew" type="Button" parent="Game/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "New"
+
+[node name="GameBack" type="Button" parent="Game/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Back"
+
+[node name="Audio" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Audio"]
+custom_minimum_size = Vector2(400, 450)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Audio/Panel"]
+custom_minimum_size = Vector2(380, 430)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -214.0
+offset_right = 39.5
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Audio/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleBar" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/TitleBar"]
+layout_mode = 2
+text = "Volume"
+
+[node name="MainVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/MainVolume"]
+layout_mode = 2
+text = "Main"
+
+[node name="mainSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/MainVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="AmbientVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/AmbientVolume"]
+layout_mode = 2
+text = "Ambient"
+
+[node name="ambientSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/AmbientVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="EffectsVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/EffectsVolume"]
+layout_mode = 2
+text = "Effects"
+
+[node name="effectsSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/EffectsVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="MusicVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/MusicVolume"]
+layout_mode = 2
+text = "Music"
+
+[node name="musicSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/MusicVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="VoiceVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/VoiceVolume"]
+layout_mode = 2
+text = "Voice"
+
+[node name="voiceSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/VoiceVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="WeatherVolume" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Audio/Panel/MarginContainer/VBoxContainer/WeatherVolume"]
+layout_mode = 2
+text = "Weather"
+
+[node name="weatherSlider" type="HSlider" parent="Audio/Panel/MarginContainer/VBoxContainer/WeatherVolume"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = -80.0
+max_value = 20.0
+
+[node name="ControlBar" type="HBoxContainer" parent="Audio/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="audioBackButton" type="Button" parent="Audio/Panel/MarginContainer/VBoxContainer/ControlBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back"
+
+[node name="Video" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Video"]
+custom_minimum_size = Vector2(360, 420)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Video/Panel"]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = -198.0
+offset_right = 175.0
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Video/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Video"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="chkReflections" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Refections"
+
+[node name="chkAmbientOcclusion" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Ambient Occlusion"
+
+[node name="chkIndirectLighting" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Indirect Lighting"
+
+[node name="chkGlobalIllumination" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Global Illumination"
+
+[node name="chkGlow" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Glow"
+
+[node name="chkFog" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fog"
+
+[node name="chkColorAdjust" type="CheckBox" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Video Adjustments"
+
+[node name="BrightnessControl" type="HBoxContainer" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Video/Panel/MarginContainer/VBoxContainer/BrightnessControl"]
+layout_mode = 2
+text = "Brightness"
+
+[node name="BrightnessSlider" type="HSlider" parent="Video/Panel/MarginContainer/VBoxContainer/BrightnessControl"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 8.0
+step = 0.1
+value = 1.0
+
+[node name="ContrastControl" type="HBoxContainer" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Video/Panel/MarginContainer/VBoxContainer/ContrastControl"]
+layout_mode = 2
+text = "Contrast"
+
+[node name="ContrastSlider" type="HSlider" parent="Video/Panel/MarginContainer/VBoxContainer/ContrastControl"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 8.0
+step = 0.1
+value = 1.0
+
+[node name="SaturationControl" type="HBoxContainer" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Video/Panel/MarginContainer/VBoxContainer/SaturationControl"]
+layout_mode = 2
+text = "Brightness"
+
+[node name="SaturationSlider" type="HSlider" parent="Video/Panel/MarginContainer/VBoxContainer/SaturationControl"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 8.0
+step = 0.1
+value = 1.0
+
+[node name="VideoBackButton" type="Button" parent="Video/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Back"
+
+[node name="Quit" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Quit"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Quit/Panel"]
+custom_minimum_size = Vector2(290, 140)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.5
+offset_top = -48.0
+offset_right = 35.5
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Quit/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Quit/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Are you sure?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="QuitCancel" type="Button" parent="Quit/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Cancel"
+
+[node name="QuitOK" type="Button" parent="Quit/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Confirm"
+
+[node name="Save" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Save"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Save/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Save/Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Save Game?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Save/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="buttonSaveGame" type="Button" parent="Save/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "SAVE"
+
+[node name="buttonBackSave" type="Button" parent="Save/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Back"
+
+[node name="buttonExitSave" type="Button" parent="Save/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Exit"
+
+[connection signal="pressed" from="Main/Panel/VBoxContainer/Game" to="." method="_on_game_pressed"]
+[connection signal="pressed" from="Main/Panel/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Main/Panel/VBoxContainer/Video" to="." method="_on_video_pressed"]
+[connection signal="pressed" from="Main/Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="visibility_changed" from="Game" to="." method="_on_game_visibility_changed"]
+[connection signal="empty_clicked" from="Game/Panel/VBoxContainer/ItemList" to="." method="_on_item_list_empty_clicked"]
+[connection signal="item_selected" from="Game/Panel/VBoxContainer/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="pressed" from="Game/Panel/VBoxContainer/GameDelete" to="." method="_on_game_delete_pressed"]
+[connection signal="pressed" from="Game/Panel/VBoxContainer/GameLoad" to="." method="_on_game_load_pressed"]
+[connection signal="pressed" from="Game/Panel/VBoxContainer/GameNew" to="." method="_on_game_new_pressed"]
+[connection signal="pressed" from="Game/Panel/VBoxContainer/GameBack" to="." method="_on_game_back_pressed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/MainVolume/mainSlider" to="." method="_on_main_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/AmbientVolume/ambientSlider" to="." method="_on_ambient_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/EffectsVolume/effectsSlider" to="." method="_on_effects_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/MusicVolume/musicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/VoiceVolume/voiceSlider" to="." method="_on_voice_slider_value_changed"]
+[connection signal="value_changed" from="Audio/Panel/MarginContainer/VBoxContainer/WeatherVolume/weatherSlider" to="." method="_on_weather_slider_value_changed"]
+[connection signal="pressed" from="Audio/Panel/MarginContainer/VBoxContainer/ControlBar/audioBackButton" to="." method="_on_audio_back_button_pressed"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkReflections" to="." method="_on_chk_reflections_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkAmbientOcclusion" to="." method="_on_chk_ambient_occlusion_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkIndirectLighting" to="." method="_on_chk_indirect_lighting_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkGlobalIllumination" to="." method="_on_chk_global_illumination_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkGlow" to="." method="_on_chk_glow_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkFog" to="." method="_on_chk_fog_toggled"]
+[connection signal="toggled" from="Video/Panel/MarginContainer/VBoxContainer/chkColorAdjust" to="." method="_on_chk_color_adjust_toggled"]
+[connection signal="value_changed" from="Video/Panel/MarginContainer/VBoxContainer/BrightnessControl/BrightnessSlider" to="." method="_on_brightness_slider_value_changed"]
+[connection signal="value_changed" from="Video/Panel/MarginContainer/VBoxContainer/ContrastControl/ContrastSlider" to="." method="_on_contrast_slider_value_changed"]
+[connection signal="value_changed" from="Video/Panel/MarginContainer/VBoxContainer/SaturationControl/SaturationSlider" to="." method="_on_saturation_slider_value_changed"]
+[connection signal="pressed" from="Video/Panel/MarginContainer/VBoxContainer/VideoBackButton" to="." method="_on_video_back_button_pressed"]
+[connection signal="pressed" from="Quit/Panel/MarginContainer/VBoxContainer/QuitCancel" to="." method="_on_quit_cancel_pressed"]
+[connection signal="pressed" from="Quit/Panel/MarginContainer/VBoxContainer/QuitOK" to="." method="_on_quit_ok_pressed"]
+[connection signal="pressed" from="Save/Panel/VBoxContainer/HBoxContainer/buttonSaveGame" to="." method="_on_button_save_game_pressed"]
+[connection signal="pressed" from="Save/Panel/VBoxContainer/HBoxContainer/buttonBackSave" to="." method="_on_button_back_save_pressed"]
+[connection signal="pressed" from="Save/Panel/VBoxContainer/HBoxContainer/buttonExitSave" to="." method="_on_button_exit_save_pressed"]
