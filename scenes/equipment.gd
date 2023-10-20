@@ -34,7 +34,7 @@ class Equipment extends Node:
 	var eDamageValue := 0.0
 	var eConsume := ConsumeType.None
 	var eConsumeValue := 0.0
-	var eRange := EffectiveRange.ShortRange
+	var eRange := EffectiveRange.Melee
 	var eIncrement := 42.0
 	var eLastsFor := -1.0
 	var _timer : Timer = Timer.new()
@@ -50,5 +50,3 @@ class Equipment extends Node:
 		_timer.connect("timeout", _DamageOverTime)
 		_timer.reparent(self)
 		_timer.set_one_shot(false)
-		_timer.start(eIncrement)
-	
