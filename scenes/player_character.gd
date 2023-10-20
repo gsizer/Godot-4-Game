@@ -37,8 +37,6 @@ func save() -> Dictionary:
 	var save_dict : Dictionary = {
 		"filename" : get_scene_file_path(),
 		"parent" : get_parent().get_path(),
-		"pos_x" : position.x, # Vector3 is not supported by JSON
-		"pos_y" : position.y,
-		"pos_z" : position.z
+		"position" : position
 	}
 	return save_dict

@@ -11,17 +11,23 @@ config_version=5
 [application]
 
 config/name="alhambra"
+config/description="A procedural generator of things for games."
 run/main_scene="res://scenes/game_controller.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="PsyzerG"
 config/features=PackedStringArray("4.1", "Forward Plus")
 boot_splash/bg_color=Color(0.501961, 0, 0.501961, 1)
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="res://sys/icon.svg"
 
 [audio]
 
 buses/default_bus_layout="res://sys/audio_bus_6.tres"
+
+[autoload]
+
+GameData="*res://scenes/game_data.tscn"
 
 [display]
 
