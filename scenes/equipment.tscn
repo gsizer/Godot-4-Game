@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://boxorr5sqihan"]
+
+[ext_resource type="Script" path="res://scenes/equipment.gd" id="1_pmlum"]
+
+[node name="Equipment" type="Node"]
+script = ExtResource("1_pmlum")

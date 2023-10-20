@@ -27,7 +27,7 @@ buses/default_bus_layout="res://sys/audio_bus_6.tres"
 
 [autoload]
 
-GameData="*res://scenes/game_data.tscn"
+Roller="*res://scenes/dice_roller.tscn"
 
 [display]
 

@@ -217,7 +217,7 @@ func _on_game_load_pressed():
 
 func _on_game_new_pressed():
 	_SaveGame = _newSaveGame
-	print_debug( "SaveGame: {S}".format( {"S":_SaveGame} ) )
+	print_debug( "GameFile: {S}".format( {"S":_SaveGame} ) )
 	$Game.hide()
 	self.hide()
 	$Save.show()
