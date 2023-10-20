@@ -1,0 +1,388 @@
+[gd_scene load_steps=78 format=3 uid="uid://byft13b7pyn07"]
+
+[ext_resource type="ArrayMesh" uid="uid://duklufh37wjbn" path="res://models/Survival/tree.obj" id="1_dlhyk"]
+[ext_resource type="ArrayMesh" uid="uid://12jua4b1reyb" path="res://models/Survival/treeFall.obj" id="2_342j4"]
+[ext_resource type="ArrayMesh" uid="uid://cfvsovu8t8cb" path="res://models/Survival/treeFallLarge.obj" id="3_4347n"]
+[ext_resource type="ArrayMesh" uid="uid://ducm0ef1ib1by" path="res://models/Survival/treeLarge.obj" id="4_pwx85"]
+[ext_resource type="ArrayMesh" uid="uid://cc4dd52gm0pn8" path="res://models/Nature/stump_old.obj" id="5_5sjto"]
+[ext_resource type="ArrayMesh" uid="uid://d250p2qc52qsx" path="res://models/Nature/stump_oldTall.obj" id="6_jpe7p"]
+[ext_resource type="ArrayMesh" uid="uid://dhgakm3q0wvu3" path="res://models/Nature/stump_round.obj" id="7_x1liu"]
+[ext_resource type="ArrayMesh" uid="uid://xlehwmjb5vhe" path="res://models/Nature/stump_roundDetailed.obj" id="8_qj5ae"]
+[ext_resource type="ArrayMesh" uid="uid://by2g44liyvffp" path="res://models/Nature/stump_square.obj" id="9_6rgtn"]
+[ext_resource type="ArrayMesh" uid="uid://3cn8y6h03wf0" path="res://models/Nature/stump_squareDetailed.obj" id="10_mw162"]
+[ext_resource type="ArrayMesh" uid="uid://5hdsq1qdikif" path="res://models/Nature/stump_squareDetailedWide.obj" id="11_6wg61"]
+[ext_resource type="ArrayMesh" uid="uid://buw0v8vd1okrq" path="res://models/Nature/tree_blocks.obj" id="12_alayn"]
+[ext_resource type="ArrayMesh" uid="uid://ci62s5bmxmv3i" path="res://models/Nature/tree_blocks_dark.obj" id="13_khbkr"]
+[ext_resource type="ArrayMesh" uid="uid://cmc12nrdbiqi" path="res://models/Nature/tree_blocks_fall.obj" id="14_2ujj6"]
+[ext_resource type="ArrayMesh" uid="uid://dvw3h4v83t5j1" path="res://models/Nature/tree_cone.obj" id="15_o6p5r"]
+[ext_resource type="ArrayMesh" uid="uid://c3o0c6dx1ekkd" path="res://models/Nature/tree_cone_dark.obj" id="16_ed3iu"]
+[ext_resource type="ArrayMesh" uid="uid://dlwe1cjp7edg0" path="res://models/Nature/tree_cone_fall.obj" id="17_jl7qw"]
+[ext_resource type="ArrayMesh" uid="uid://spq0k3pvd52b" path="res://models/Nature/tree_default.obj" id="18_gtsxm"]
+[ext_resource type="ArrayMesh" uid="uid://f5xp8sbqrsnq" path="res://models/Nature/tree_default_dark.obj" id="19_ien77"]
+[ext_resource type="ArrayMesh" uid="uid://dhx4g1mpmb3mg" path="res://models/Nature/tree_default_fall.obj" id="20_dwfbt"]
+[ext_resource type="ArrayMesh" uid="uid://bl8byu7d83kjx" path="res://models/Nature/tree_detailed.obj" id="21_imh8d"]
+[ext_resource type="ArrayMesh" uid="uid://bvfi4fm1t8n65" path="res://models/Nature/tree_detailed_dark.obj" id="22_e4bek"]
+[ext_resource type="ArrayMesh" uid="uid://b4j7bnakakjvi" path="res://models/Nature/tree_detailed_fall.obj" id="23_26yss"]
+[ext_resource type="ArrayMesh" uid="uid://dxchpaifol2bv" path="res://models/Nature/tree_fat.obj" id="24_gnjhf"]
+[ext_resource type="ArrayMesh" uid="uid://miws013ksk13" path="res://models/Nature/tree_fat_darkh.obj" id="25_x4s3j"]
+[ext_resource type="ArrayMesh" uid="uid://b7ovw7njjhs6s" path="res://models/Nature/tree_fat_fall.obj" id="26_jejfq"]
+[ext_resource type="ArrayMesh" uid="uid://duoygd7lhymxi" path="res://models/Nature/tree_oak.obj" id="27_mx4d0"]
+[ext_resource type="ArrayMesh" uid="uid://ds83vkge64tq4" path="res://models/Nature/tree_oak_dark.obj" id="28_17j2s"]
+[ext_resource type="ArrayMesh" uid="uid://dyx3e502knhrl" path="res://models/Nature/tree_oak_fall.obj" id="29_chmvb"]
+[ext_resource type="ArrayMesh" uid="uid://bxl5bn0v76hjf" path="res://models/Nature/tree_palm.obj" id="30_ay0hp"]
+[ext_resource type="ArrayMesh" uid="uid://csf37dy8c6764" path="res://models/Nature/tree_palmBend.obj" id="31_ts1tu"]
+[ext_resource type="ArrayMesh" uid="uid://d2goy4scpc0s" path="res://models/Nature/tree_palmDetailedShort.obj" id="32_p07a2"]
+[ext_resource type="ArrayMesh" uid="uid://bh87bwtg4l1xe" path="res://models/Nature/tree_palmDetailedTall.obj" id="33_u2feb"]
+[ext_resource type="ArrayMesh" uid="uid://dnoncxgm6gk2f" path="res://models/Nature/tree_palmShort.obj" id="34_462ye"]
+[ext_resource type="ArrayMesh" uid="uid://r3odypr4g5f7" path="res://models/Nature/tree_palmTall.obj" id="35_7h5yt"]
+[ext_resource type="ArrayMesh" uid="uid://djaaccg4i5044" path="res://models/Nature/tree_pineDefaultA.obj" id="36_sx2i1"]
+[ext_resource type="ArrayMesh" uid="uid://15a5cupck6kp" path="res://models/Nature/tree_pineDefaultB.obj" id="37_jkmve"]
+[ext_resource type="ArrayMesh" uid="uid://dy6ucjttnka3k" path="res://models/Nature/tree_pineGroundA.obj" id="38_aop1k"]
+[ext_resource type="ArrayMesh" uid="uid://brkx2i1qpimm2" path="res://models/Nature/tree_pineGroundB.obj" id="39_an212"]
+[ext_resource type="ArrayMesh" uid="uid://jd70e8t4pkhq" path="res://models/Nature/tree_pineRoundA.obj" id="40_ujkb3"]
+[ext_resource type="ArrayMesh" uid="uid://dr7vc7tt35i0t" path="res://models/Nature/tree_pineRoundB.obj" id="41_ephb1"]
+[ext_resource type="ArrayMesh" uid="uid://byn1ej84lpmnr" path="res://models/Nature/tree_pineRoundC.obj" id="42_gpfdv"]
+[ext_resource type="ArrayMesh" uid="uid://cefm5resjckn5" path="res://models/Nature/tree_pineRoundD.obj" id="43_x53vh"]
+[ext_resource type="ArrayMesh" uid="uid://dksowlyorrqfj" path="res://models/Nature/tree_pineRoundE.obj" id="44_ph0sw"]
+[ext_resource type="ArrayMesh" uid="uid://bvokgwwb7fvh3" path="res://models/Nature/tree_pineRoundF.obj" id="45_avxui"]
+[ext_resource type="ArrayMesh" uid="uid://vimv0yvc1j1u" path="res://models/Nature/tree_pineSmallA.obj" id="46_uv2s1"]
+[ext_resource type="ArrayMesh" uid="uid://b1466qxgi06e" path="res://models/Nature/tree_pineSmallB.obj" id="47_03ffv"]
+[ext_resource type="ArrayMesh" uid="uid://ch6h7ospvbmhp" path="res://models/Nature/tree_pineSmallC.obj" id="48_nautj"]
+[ext_resource type="ArrayMesh" uid="uid://b3xyfio3r56qu" path="res://models/Nature/tree_pineSmallD.obj" id="49_6bk54"]
+[ext_resource type="ArrayMesh" uid="uid://n34d82uq521g" path="res://models/Nature/tree_pineTallA.obj" id="50_c4glu"]
+[ext_resource type="ArrayMesh" uid="uid://ka2x5k0ywgct" path="res://models/Nature/tree_pineTallA_detailed.obj" id="51_ue7ob"]
+[ext_resource type="ArrayMesh" uid="uid://d0c5wxv2384ni" path="res://models/Nature/tree_pineTallB.obj" id="52_s84k0"]
+[ext_resource type="ArrayMesh" uid="uid://qvawxy0i7t1x" path="res://models/Nature/tree_pineTallB_detailed.obj" id="53_6pn2m"]
+[ext_resource type="ArrayMesh" uid="uid://xakac6s5isie" path="res://models/Nature/tree_pineTallC.obj" id="54_qtbs2"]
+[ext_resource type="ArrayMesh" uid="uid://bgtwhnuujsdp8" path="res://models/Nature/tree_pineTallC_detailed.obj" id="55_8ygki"]
+[ext_resource type="ArrayMesh" uid="uid://dyfo4cfb8ofpn" path="res://models/Nature/tree_pineTallD.obj" id="56_0yd6y"]
+[ext_resource type="ArrayMesh" uid="uid://cfx7v30kvvcvk" path="res://models/Nature/tree_pineTallD_detailed.obj" id="57_dc6ug"]
+[ext_resource type="ArrayMesh" uid="uid://dyr5ny0lhbtrf" path="res://models/Nature/tree_plateau.obj" id="58_vluis"]
+[ext_resource type="ArrayMesh" uid="uid://r3mc26xgkd3q" path="res://models/Nature/tree_plateau_dark.obj" id="59_bcd4t"]
+[ext_resource type="ArrayMesh" uid="uid://r71uynrrpjra" path="res://models/Nature/tree_plateau_fall.obj" id="60_2en5l"]
+[ext_resource type="ArrayMesh" uid="uid://csdhwyd2qb4fo" path="res://models/Nature/tree_simple.obj" id="61_wb8ax"]
+[ext_resource type="ArrayMesh" uid="uid://bmasodirsrgis" path="res://models/Nature/tree_simple_dark.obj" id="62_o458i"]
+[ext_resource type="ArrayMesh" uid="uid://rx8bi5cc2bmm" path="res://models/Nature/tree_simple_fall.obj" id="63_c5s0x"]
+[ext_resource type="ArrayMesh" uid="uid://gy86gfpl5f6d" path="res://models/Nature/tree_small.obj" id="64_sli1j"]
+[ext_resource type="ArrayMesh" uid="uid://p5qeif1j684o" path="res://models/Nature/tree_small_dark.obj" id="65_7jmsl"]
+[ext_resource type="ArrayMesh" uid="uid://c70lbir533efe" path="res://models/Nature/tree_small_fall.obj" id="66_vqd42"]
+[ext_resource type="ArrayMesh" uid="uid://bp3is3r46tnw0" path="res://models/Nature/tree_tall.obj" id="67_0fgl3"]
+[ext_resource type="ArrayMesh" uid="uid://c7215ab0p5eob" path="res://models/Nature/tree_tall_dark.obj" id="68_vockp"]
+[ext_resource type="ArrayMesh" uid="uid://brera2rln7rng" path="res://models/Nature/tree_tall_fall.obj" id="69_qe3g4"]
+[ext_resource type="ArrayMesh" uid="uid://cgkfukhqi0v5i" path="res://models/Nature/tree_thin.obj" id="70_khvxi"]
+[ext_resource type="ArrayMesh" uid="uid://dpxmilx1cpu0h" path="res://models/Nature/tree_thin_dark.obj" id="71_jk07g"]
+[ext_resource type="ArrayMesh" uid="uid://5o5jh78on46x" path="res://models/Nature/tree_thin_fall.obj" id="72_fw7h5"]
+[ext_resource type="ArrayMesh" uid="uid://bmav4cqrnbl1v" path="res://models/FantasyTown/tree.obj" id="73_ygax1"]
+[ext_resource type="ArrayMesh" uid="uid://gejs5pynl18x" path="res://models/FantasyTown/treeCrooked.obj" id="74_6t1i4"]
+[ext_resource type="ArrayMesh" uid="uid://q5rdbckixpsh" path="res://models/FantasyTown/treeHigh.obj" id="75_6xw7h"]
+[ext_resource type="ArrayMesh" uid="uid://c514hoeqrqtpm" path="res://models/FantasyTown/treeHighCrooked.obj" id="76_nx7oe"]
+[ext_resource type="ArrayMesh" uid="uid://dbu7e71qd2wde" path="res://models/FantasyTown/treeHighRound.obj" id="77_lc7ic"]
+
+[node name="Library" type="Node3D"]
+
+[node name="Tree" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_dlhyk")
+
+[node name="TreeFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("2_342j4")
+
+[node name="TreeFallLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_4347n")
+
+[node name="TreeLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("4_pwx85")
+
+[node name="StumpOld" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("5_5sjto")
+
+[node name="StumpOldTall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("6_jpe7p")
+
+[node name="StumpRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("7_x1liu")
+
+[node name="StumpRoundDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("8_qj5ae")
+
+[node name="StumpSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("9_6rgtn")
+
+[node name="StumpSquareDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("10_mw162")
+
+[node name="StumpSquareDetailedWide" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("11_6wg61")
+
+[node name="TreeBlocks" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("12_alayn")
+
+[node name="TreeBlocksDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("13_khbkr")
+
+[node name="TreeBlocksFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("14_2ujj6")
+
+[node name="TreeCone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("15_o6p5r")
+
+[node name="TreeConeDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("16_ed3iu")
+
+[node name="TreeConeFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("17_jl7qw")
+
+[node name="TreeDefault" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("18_gtsxm")
+
+[node name="TreeDefaultDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("19_ien77")
+
+[node name="TreeDefaultFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("20_dwfbt")
+
+[node name="TreeDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("21_imh8d")
+
+[node name="TreeDetailedDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6)
+mesh = ExtResource("22_e4bek")
+
+[node name="TreeDetailedFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+mesh = ExtResource("23_26yss")
+
+[node name="TreeFat" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+mesh = ExtResource("24_gnjhf")
+
+[node name="TreeFatDarkh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 7)
+mesh = ExtResource("25_x4s3j")
+
+[node name="TreeFatFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 7)
+mesh = ExtResource("26_jejfq")
+
+[node name="TreeOak" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+mesh = ExtResource("27_mx4d0")
+
+[node name="TreeOakDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 8)
+mesh = ExtResource("28_17j2s")
+
+[node name="TreeOakFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+mesh = ExtResource("29_chmvb")
+
+[node name="TreePalm" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("30_ay0hp")
+
+[node name="TreePalmBend" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("31_ts1tu")
+
+[node name="TreePalmDetailedShort" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+mesh = ExtResource("32_p07a2")
+
+[node name="TreePalmDetailedTall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+mesh = ExtResource("33_u2feb")
+
+[node name="TreePalmShort" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+mesh = ExtResource("34_462ye")
+
+[node name="TreePalmTall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+mesh = ExtResource("35_7h5yt")
+
+[node name="TreePineDefaultA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+mesh = ExtResource("36_sx2i1")
+
+[node name="TreePineDefaultB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+mesh = ExtResource("37_jkmve")
+
+[node name="TreePineGroundA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+mesh = ExtResource("38_aop1k")
+
+[node name="TreePineGroundB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+mesh = ExtResource("39_an212")
+
+[node name="TreePineRoundA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 3)
+mesh = ExtResource("40_ujkb3")
+
+[node name="TreePineRoundB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+mesh = ExtResource("41_ephb1")
+
+[node name="TreePineRoundC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+mesh = ExtResource("42_gpfdv")
+
+[node name="TreePineRoundD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("43_x53vh")
+
+[node name="TreePineRoundE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
+mesh = ExtResource("44_ph0sw")
+
+[node name="TreePineRoundF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+mesh = ExtResource("45_avxui")
+
+[node name="TreePineSmallA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("46_uv2s1")
+
+[node name="TreePineSmallB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
+mesh = ExtResource("47_03ffv")
+
+[node name="TreePineSmallC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
+mesh = ExtResource("48_nautj")
+
+[node name="TreePineSmallD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1)
+mesh = ExtResource("49_6bk54")
+
+[node name="TreePineTallA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("50_c4glu")
+
+[node name="TreePineTallADetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("51_ue7ob")
+
+[node name="TreePineTallB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("52_s84k0")
+
+[node name="TreePineTallBDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+mesh = ExtResource("53_6pn2m")
+
+[node name="TreePineTallC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = ExtResource("54_qtbs2")
+
+[node name="TreePineTallCDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 1)
+mesh = ExtResource("55_8ygki")
+
+[node name="TreePineTallD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4)
+mesh = ExtResource("56_0yd6y")
+
+[node name="TreePineTallDDetailed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+mesh = ExtResource("57_dc6ug")
+
+[node name="TreePlateau" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+mesh = ExtResource("58_vluis")
+
+[node name="TreePlateauDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5)
+mesh = ExtResource("59_bcd4t")
+
+[node name="TreePlateauFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+mesh = ExtResource("60_2en5l")
+
+[node name="TreeSimple" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5)
+mesh = ExtResource("61_wb8ax")
+
+[node name="TreeSimpleDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 5)
+mesh = ExtResource("62_o458i")
+
+[node name="TreeSimpleFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
+mesh = ExtResource("63_c5s0x")
+
+[node name="TreeSmall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+mesh = ExtResource("64_sli1j")
+
+[node name="TreeSmallDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+mesh = ExtResource("65_7jmsl")
+
+[node name="TreeSmallFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 6)
+mesh = ExtResource("66_vqd42")
+
+[node name="TreeTall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+mesh = ExtResource("67_0fgl3")
+
+[node name="TreeTallDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 6)
+mesh = ExtResource("68_vockp")
+
+[node name="TreeTallFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 6)
+mesh = ExtResource("69_qe3g4")
+
+[node name="TreeThin" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7)
+mesh = ExtResource("70_khvxi")
+
+[node name="TreeThinDark" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 7)
+mesh = ExtResource("71_jk07g")
+
+[node name="TreeThinFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7)
+mesh = ExtResource("72_fw7h5")
+
+[node name="Tree2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 8)
+mesh = ExtResource("73_ygax1")
+
+[node name="TreeCrooked" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8)
+mesh = ExtResource("74_6t1i4")
+
+[node name="TreeHigh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8)
+mesh = ExtResource("75_6xw7h")
+
+[node name="TreeHighCrooked" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 8)
+mesh = ExtResource("76_nx7oe")
+
+[node name="TreeHighRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8)
+mesh = ExtResource("77_lc7ic")
