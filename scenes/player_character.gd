@@ -23,18 +23,17 @@ func _physics_process(delta):
 		MOTION_MODE_FLOATING:
 			velocity.y = 0.0
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("move_left", "move_right", "move_fore", "move_rear")
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
-
-	move_and_slide()
+func _input(event):
+	if event.is_action_type():
+		if event.is_action_pressed("move_left"):
+			velocity.x -= 1 * SPEED
+		if event.is_action_pressed("move_right"):
+			velocity.x += 1 * SPEED
+		if event.is_action_pressed("move_fore"):
+			velocity.z -= 1 * SPEED
+		if event.is_action_pressed("move_rear"):
+			velocity.z += 1 * SPEED
+		move_and_slide()
 
 func save() -> Dictionary:
 	var save_dict : Dictionary = {

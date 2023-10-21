@@ -20,9 +20,8 @@ ssao_enabled = true
 sdfgi_enabled = true
 glow_enabled = true
 
-[node name="NewGame" type="Node3D" node_paths=PackedStringArray("Generator", "Player")]
+[node name="NewGame" type="Node3D" node_paths=PackedStringArray("Player")]
 script = ExtResource("1_4afmw")
-Generator = NodePath("")
 Player = NodePath("PlayerCharacter")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
