@@ -12,13 +12,16 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var Model : MeshInstance3D
 
 func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y -= gravity * delta
-
-	# Handle Jump.
-	if Input.is_action_just_pressed("move_jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	match self.motion_mode:
+		MOTION_MODE_GROUNDED:
+			# Add the gravity.
+			if not is_on_floor():
+				velocity.y -= gravity * delta
+			# Handle Jump.
+			if Input.is_action_just_pressed("move_jump") and is_on_floor():
+				velocity.y = JUMP_VELOCITY
+		MOTION_MODE_FLOATING:
+			velocity.y = 0.0
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

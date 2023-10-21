@@ -21,10 +21,11 @@ class Equipment extends Node:
 	enum EffectiveRange {
 		Melee=0, ShortRange=10, LongRange=20, Indirect=30, Artillery=40
 		}
-
+	
 	var eName : String = "Skivvies of Noxious Odor"
-	# grab the first and only result from the returned Array of 1D10
-	var initRoll : int = DiceRoller.Roll( 1, DiceRoller.Dice.D10, true)[0]
+	var eDescription : String = "{R} {T}"
+	# grab the first and only result from the returned Array of 1D10 rolls
+	var initRoll : int = Roller.Roll( 1, Roller.Dice.D10, true)[0]
 	var eQuality := EquipmentQuality.Magenta
 	var eRarity := EquipmentRarity.Unique
 	var eType := EquipmentType.Armor
@@ -35,18 +36,23 @@ class Equipment extends Node:
 	var eConsume := ConsumeType.None
 	var eConsumeValue := 0.0
 	var eRange := EffectiveRange.Melee
-	var eIncrement := 42.0
-	var eLastsFor := -1.0
+	var eIncrement := 1.0
+	var eLastsFor := 10.0
 	var _timer : Timer = Timer.new()
 	
-	func _to_string():
-		return eName
-	
-	func _DamageOverTime() -> void :
-		print_debug("{N} has dropped some residue".format({"N":eName}))
+	func DamageOverTime() -> float :
+		print_debug( "{N}.proc".format( {"N":eName} ) )
+		if eLastsFor >= eIncrement : eLastsFor -= eIncrement
+		if eLastsFor <= 0 : _timer.stop()
+		return eDamageValue
 	
 	func _ready():
 		add_child(_timer)
-		_timer.connect("timeout", _DamageOverTime)
+		_timer.connect("timeout", DamageOverTime)
 		_timer.reparent(self)
 		_timer.set_one_shot(false)
+	
+	func _to_string():
+		var d = eDescription.format( {"R":eRarity, "T":eType} )
+		var s = "{N}\n{D}".format( {"N":eName, "D":d} )
+		return s
