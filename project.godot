@@ -10,11 +10,11 @@ config_version=5
 
 [application]
 
-config/name="alhambra"
+config/name="Alhambra"
 config/description="A procedural generator of things for games."
 run/main_scene="res://scenes/game_controller.tscn"
 config/use_custom_user_dir=true
-config/custom_user_dir_name="PsyzerG"
+config/custom_user_dir_name="51Z3R"
 config/features=PackedStringArray("4.1", "Forward Plus")
 boot_splash/bg_color=Color(0.501961, 0, 0.501961, 1)
 boot_splash/show_image=false

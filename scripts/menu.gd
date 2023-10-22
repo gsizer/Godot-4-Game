@@ -214,6 +214,7 @@ func _on_game_load_pressed():
 				if i is String and (i == "filename" or i == "parent" or i == "position"):
 					continue
 				new_object.set(i, node_data[i])
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _on_game_new_pressed():
 	_SaveGame = _newSaveGame
@@ -222,6 +223,7 @@ func _on_game_new_pressed():
 	self.hide()
 	$Save.show()
 	CTRL.Adopt(_SaveGame)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _on_game_back_pressed():
 	$Game.hide()
@@ -248,6 +250,7 @@ func _on_button_save_game_pressed():
 
 func _on_button_back_save_pressed():
 	self.hide()
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _on_button_exit_save_pressed():
 	_on_quit_ok_pressed()
@@ -348,4 +351,6 @@ func _ready():
 
 func _input(event):
 	if event.is_action_released("ui_cancel") and CTRL.InGame:
-		if !self.is_visible_in_tree():self.show()
+		if !self.is_visible_in_tree():
+			self.show()
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
