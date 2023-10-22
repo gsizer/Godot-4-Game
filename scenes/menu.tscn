@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://btjhis1eneuv2"]
 
-[ext_resource type="Script" path="res://scenes/menu.gd" id="1_fqary"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_fqary"]
 
 [node name="Menu" type="Control" node_paths=PackedStringArray("SaveDataList", "AmbientVolumeSlider", "EffectsVolumeSlider", "MainVolumeSlider", "MusicVolumeSlider", "VoiceVolumeSlider", "WeatherVolumeSlider", "EnableReflections", "EnableAmbientOcclusion", "EnableIndirectLighting", "EnableGlobalIllumination", "EnableGlow", "EnableFog", "EnableColorAdjust", "BrightnessSlider", "ContrastSlider", "SaturationSlider")]
 layout_mode = 3
