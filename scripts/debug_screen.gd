@@ -4,9 +4,10 @@ extends Control
 
 var framerate : float = 0.0
 var framecount : int = 0
-var uptime : float = 0.0
+var lastTime : float = 0.0
+var currentTime : float = 0.0
 var debugInfo : String = ""
-var debugString : String = "Up Time: {T}\nFrame Count: {C}\nFrame Rate: {R}"
+var debugString : String = "Frame Rate: {FPS}"
 
 func _input(event):
 	if event.is_action_released("toggle_debug_info"):
@@ -16,13 +17,17 @@ func _input(event):
 			self.show()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	# calc framerate
 	framecount += 1
-	uptime += delta
-	framerate = framecount / (delta - uptime)
-	# apply variables to debugString
-	debugInfo = debugString.format( {"T":uptime, "C":framecount, "R":framerate} )
-	# update Label Text if visible
-	if is_visible_in_tree():
-		label.set("text", debugInfo)
+	currentTime = Time.get_ticks_msec()
+	var elapsedTime = currentTime - lastTime
+	if elapsedTime >= 1000:
+		framerate = framecount / (elapsedTime / 1000)
+		framecount = 0
+		lastTime = currentTime
+		# update Label Text if visible
+		if is_visible_in_tree():
+			# apply variables to debugString
+			debugInfo = debugString.format( {"FPS":framerate} )
+			label.set("text", debugInfo)
