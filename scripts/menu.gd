@@ -191,8 +191,6 @@ func _on_game_load_pressed():
 		return
 	print_debug( "SaveGame: {S}".format( {"S":_SaveGame} ) )
 	$Game.hide()
-	self.hide()
-	$Save.show()
 	# from the documentation
 	if FileAccess.file_exists(_SaveGame):
 		### Load NEWGAME
@@ -220,8 +218,6 @@ func _on_game_new_pressed():
 	_SaveGame = _newSaveGame
 	print_debug( "GameFile: {S}".format( {"S":_SaveGame} ) )
 	$Game.hide()
-	self.hide()
-	$Save.show()
 	CTRL.Adopt(_SaveGame)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -249,8 +245,10 @@ func _on_button_save_game_pressed():
 		save_game.store_var(node_data)
 
 func _on_button_back_save_pressed():
-	self.hide()
+	$Save.hide()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	self.hide()
+	CTRL.InGame = true
 
 func _on_button_exit_save_pressed():
 	_on_quit_ok_pressed()
@@ -351,6 +349,14 @@ func _ready():
 
 func _input(event):
 	if event.is_action_released("ui_cancel") and CTRL.InGame:
-		if !self.is_visible_in_tree():
-			self.show()
+		CTRL.InGame = false
+		self.show()
+		# display save/pause menu
+		if !$Save.is_visible_in_tree():
+			$Save.show()
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else: # return to game session
+			$Save.hide()
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			self.hide()
+			CTRL.InGame = true

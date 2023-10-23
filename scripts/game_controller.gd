@@ -2,14 +2,13 @@ extends Node
 class_name Controller
 
 @export var Menu : String = "res://scenes/menu.tscn"
-var InGame : bool = false
-var _Menu_Instance : Node
-var _Children : int
+@export var DebugScreen : String = "res://scenes/debug_screen.tscn"
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	_Children = get_child_count()
-	_Menu_Instance = Adopt(Menu)
+var InGame : bool = false
+
+var _Menu_Instance : Control
+var _DebugScreen : Control
+var _Children : int
 
 func _process(_delta):
 	# count children
@@ -21,6 +20,12 @@ func _process(_delta):
 			var n = get_child(child) as Node
 			print_debug("Child [{I}] is \'{N}\'".format( { "I":child, "N":n.name } ) )
 
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	_Children = get_child_count()
+	_DebugScreen = Adopt(DebugScreen)
+	_Menu_Instance = Adopt(Menu)
+
 # become parent of Node
 func Adopt( scene ) -> Node:
 	var resNode = load(scene)
@@ -28,3 +33,7 @@ func Adopt( scene ) -> Node:
 	add_child(instNode)
 	instNode.reparent(self)
 	return instNode
+
+func StartGame()->void:
+	InGame = true
+	_Menu_Instance.hide()

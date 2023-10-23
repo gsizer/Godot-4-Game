@@ -5,4 +5,4 @@ var CTRL : Controller
 
 func _ready():
 	CTRL = find_parent("GameController") as Controller
-	CTRL.InGame = true
+	CTRL.StartGame()
