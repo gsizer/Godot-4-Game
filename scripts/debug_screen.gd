@@ -7,7 +7,7 @@ var framecount : int = 0
 var lastTime : float = 0.0
 var currentTime : float = 0.0
 var debugInfo : String = ""
-var debugString : String = "Frame Rate: {FPS}"
+var debugString : String = "Frames Per Second: {FPS}\n"
 
 func _input(event):
 	if event.is_action_released("toggle_debug_info"):
