@@ -9,7 +9,8 @@ var framecount : int = 0
 var lastTime : float = 0.0
 var currentTime : float = 0.0
 var debugInfo : String = ""
-var debugString : String = "FPS: {FPS}"
+var formatString : String = "FPS: {FPS}\nPos X: {POSX}\nPos Y: {POSY}\nPos Z: {POSZ}"
+var _player : Player
 
 func _input(event):
 	if event.is_action_released("toggle_debug_info"):
@@ -31,6 +32,11 @@ func _process(_delta):
 		# update Label Text if visible
 		if is_visible_in_tree():
 			debugInfo = ""
-			# apply variables to debugString
-			debugInfo = debugString.format( {"FPS":framerate} )
+			# apply variables to formatString
+			debugInfo = formatString.format( {
+				"FPS":framerate,
+#				"POSX":_player.position.x,
+#				"POSY":_player.position.y,
+#				"POSZ":_player.position.z
+			} )
 			label.set("text", debugInfo)
