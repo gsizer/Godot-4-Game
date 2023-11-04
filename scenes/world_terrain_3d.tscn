@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3kj2h4id8kvv"]
+
+[sub_resource type="Terrain3DStorage" id="Terrain3DStorage_4crke"]
+save_16-bit = true
+show_checkered = true
+noise_scale = 1.0
+noise_height = 600.0
+
+[sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_0ronu"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jlp6d"]
+sky_top_color = Color(0.713726, 0.8, 0.964706, 1)
+sky_horizon_color = Color(0.719608, 0.734314, 0.767647, 1)
+ground_bottom_color = Color(0.164706, 0.137255, 0.105882, 1)
+ground_horizon_color = Color(0.719608, 0.734314, 0.767647, 1)
+
+[sub_resource type="Sky" id="Sky_tvos2"]
+sky_material = SubResource("ProceduralSkyMaterial_jlp6d")
+
+[sub_resource type="Environment" id="Environment_ht6qm"]
+background_mode = 2
+sky = SubResource("Sky_tvos2")
+tonemap_mode = 2
+ssao_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+
+[node name="WorldTerrain3D" type="Terrain3D"]
+storage = SubResource("Terrain3DStorage_4crke")
+texture_list = SubResource("Terrain3DTextureList_0ronu")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ht6qm")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+light_color = Color(1, 0.992157, 0.870588, 1)
+shadow_enabled = true

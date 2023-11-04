@@ -23,7 +23,6 @@ func _process(_delta):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_Children = get_child_count()
-	_DebugScreen = Adopt(DebugScreen)
 	_Menu_Instance = Adopt(Menu)
 
 # become parent of Node
@@ -36,4 +35,5 @@ func Adopt( scene ) -> Node:
 
 func StartGame()->void:
 	InGame = true
+	_DebugScreen = Adopt(DebugScreen)
 	_Menu_Instance.hide()
