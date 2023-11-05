@@ -18,3 +18,4 @@ mono_crash.*.json
 textures/
 models/
 audio/
+addons/terrain_3d/tools/importer.tscn
