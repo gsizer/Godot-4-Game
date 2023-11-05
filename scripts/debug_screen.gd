@@ -10,7 +10,6 @@ var lastTime : float = 0.0
 var currentTime : float = 0.0
 var debugInfo : String = ""
 var formatString : String = "FPS: {FPS}\nPos X: {POSX}\nPos Y: {POSY}\nPos Z: {POSZ}"
-var _player : Player
 
 func _input(event):
 	if event.is_action_released("toggle_debug_info"):
