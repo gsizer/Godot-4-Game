@@ -486,8 +486,8 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="Save/Panel/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "Save Game?"
+theme_override_font_sizes/font_size = 30
+text = "Save Game ?"
 horizontal_alignment = 1
 vertical_alignment = 1
 
