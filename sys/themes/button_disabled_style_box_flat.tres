@@ -8,3 +8,7 @@ border_width_right = 5
 border_width_bottom = 5
 border_color = Color(0, 0.460895, 0.340083, 1)
 border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
